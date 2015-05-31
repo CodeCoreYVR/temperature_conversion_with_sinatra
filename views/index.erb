@@ -6,5 +6,12 @@
   </head>
   <body>
     <h1>Welcome to my first Sinatra App</h1>
+    <form action="/convert" method="post">
+      <div>
+        <label for="temperature">Temperatur in &deg;C</label>
+        <input type="text" id="temperature" name="temperature">
+      </div>
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>
