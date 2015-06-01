@@ -9,9 +9,12 @@
     <form action="/convert" method="post">
       <div>
         <label for="temperature">Temperatur in &deg;C</label>
-        <input type="text" id="temperature" name="temperature">
+        <input type="text" id="temperature" name="temperature" value="<%= @temperature_in_c %>">
       </div>
       <input type="submit" value="Submit">
     </form>
+    <% if @temperature_in_f %>
+      The temperature in &deg;F is <%= @temperature_in_f %>
+    <% end %>
   </body>
 </html>
